@@ -3,5 +3,7 @@ class WelcomeController < ApplicationController
   end
 
   def about
+  	@color = params[:color]
+  	@background = params[:background]
   end
 end

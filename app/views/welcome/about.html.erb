@@ -1,2 +1,15 @@
+<style>
+body{
+	color: <%= @color %>;
+	background: <%= @background %>;
+}
+</style>
+
+
 <h1>About</h1>
 <p>This is a website about adventures. Obvs.</p>
+
+<%= link_to "Make it Red", about_path(color: "tomato"), class: "btn btn-primary" %>
+<%= link_to "Make it Blue", about_path(color: "blue"), class: "btn btn-primary" %>
+<%= link_to "Red!", about_path(background: "tomato"), class: "btn btn-primary" %>
+<%= link_to "Blue!", about_path(background: "blue"), class: "btn btn-primary" %>
