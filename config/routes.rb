@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   resources :activities
   resources :states
   root 'welcome#index'
@@ -8,6 +9,8 @@ Rails.application.routes.draw do
   get 'thisisus' => 'welcome#about'
 
   get 'ilovetocode' => 'welcome#index'
+
+  get 'contact' => 'welcome#contact'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
